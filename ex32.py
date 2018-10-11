@@ -1,25 +1,20 @@
-import datetime
-myname = 'shiva'
-myid = 'NCD0518H028'
-now = datetime.datetime.now()
+the_count = [1, 2, 3, 4, 5]
+fruits = ['apples', 'oranges', 'pears', 'apricots']
+change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
+for number in the_count:
+    print "this is count %d" % number
 
-print  " script executed by %s with id %s " % (myname, myid)
-print now.isoformat()
+for fruit in fruits:
+    print "A fruit of type: %s" % fruit
 
+for i in change:
+    print "I got %r" % i
 
-i = 0
-numbers = []
-limit = 6
+elements = []
 
-while i < limit:
+for i in range(0, 6):
+    print "Adding %d to the list." % i
+    elements.append(i)
 
-	print "at the top i is %d" % i
-	numbers.append(i)
-	i = i + 1
-
-print "number now:", numbers
-print "at the bottom i is %d" % i
-
-print "the numbers:"
-for num in numbers:
-	print num
+for i in elements:
+    print "Element was: %d" % i

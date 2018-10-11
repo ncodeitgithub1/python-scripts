@@ -1,43 +1,21 @@
-import datetime
-myname = 'shiva'
-myid = 'NCD0518H028'
-now = datetime.datetime.now()
-
-print  " script executed by %s with id %s " % (myname, myid)
-print now.isoformat()
-
-
-the_count = [1, 2, 3, 4, 5]
-fruits = ['apples', 'oranges', 'pears', 'apricots']
-change = [1, 'pennies', 2, 'domes', 3, 'quarters']
-
-# this first kind of for-loop goes through a list
-
-for number in the_count:
-    print "This is cound %d" % number
-
-# same as above
-for fruit in fruits:
-    print "A fruit of type: %s" % fruit
-
-# also we can go through mixes lists too
-# notice we have to use %r since we dont know what's in it
-for i in change:
-    print "I got %r" % i
-
-# we can also build lists; first start with an empty one
-
-elements = []
-
-# then use the range function to do 0 to 5 counts
-for i in range(0, 6):
-    print "Adding %d to the list." % i
-
-    # append is a function that lists Understand
-    elements.append(i)
-
-# now we can print them out too
-
-for i in elements:
-    print "Element was: %d" %i
-
+print "you ente a dark room with two doors. Do you go through door #1 or Door #2?"
+door = raw_input("> ")
+if door == "1":
+    print "There's a gaint bear here eating a cheese cake. What do you do?"
+    print "1. Take the cake."
+    print "2. Scream at the bear."
+    bear = raw_input("> ")
+    if bear == "1":
+        print "The bear eats your face off. Good job!"
+    elif bear == "2":
+        print "well doing %s is probably better. Bear runs away." % bear
+    elif door == "2":
+        print "You stare into the endless abyss at Cthulthu's retina."
+        print "1. Blueberries."
+        print "2. Yellow jacket clothespins."
+        print "3. Understanding revovers yelling melodies."
+        insanity = raw_input("> ")
+        if insanity == "1" or insanity == "2":
+            print "your body survives powered by a mind of jello. Good job!"
+        else:
+            print "The stumble around and fall on a knife and die. Good job!"
