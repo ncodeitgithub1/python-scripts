@@ -1,0 +1,4 @@
+here's you file 'ex15.txt'
+this is stuff I typed into file.
+It is really cool stuff.
+Lot's and lot's of fun to have in here.
